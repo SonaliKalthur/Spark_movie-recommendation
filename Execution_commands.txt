@@ -1,0 +1,8 @@
+/share/movie/ratings.csv
+/share/movie/movies.csv
+
+
+1a_b--->
+1c-->  pyspark  --master yarn-client --num-executors 5 workload1c.py
+1d--->
+W2--->pyspark --master yarn-client --num-executors 10 recommendationmovie.py /share/movie personalRatings.txt
